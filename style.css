@@ -1,32 +1,66 @@
-*{
-     
-}
-
-body {
-    background-image: url('images/dogs.jpg');   
+html {
+    background-image: url('images/pup.jpg');   
     text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
 #heading{
     font-family: "Times New Roman";
-    color: white;
-    background-color: green;
+    background-color: rgb(100, 169, 209);
+    text-align: center;
+    width: 650px;
+    border: 3px double white;
     margin-bottom: 10px;
+    display: block;
+    margin: auto auto 10px auto;
 }
 
-div{
-    background-color: #ffffff; 
+h1, h2 {
+    color: rgb(222, 104, 55);
+    text-shadow: 1px 1px  5px white ;
+}
+
+
+#description {
+    color: white;
+    font-size: 20px;
+    text-shadow: 3px 3px  5px rgb(222, 104, 55) ;
+}
+
+.input{
+    background-color: rgba(100, 169, 209, .7);
     padding: 10px;
     margin: 0px auto;
     display: block;
-    opacity: 70%;
-    color: black;
-    width: 500px;
+    color: white;
+    width: 600px;
+    font-weight: 600px;
 }
 
 #submit{
-    background-color: red;
+    background-color: rgb(222, 104, 55);
     padding: 5px;
     color: white;
     font-size: 206x;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
+ #name, #email, #phone, #dog-name {
+     border-radius: 5%;
+     width: 300px;
+     height: 20px;
+     font-size: 16px;
+ }
+
+ #number, #months {
+    border-radius: 5%;
+    height: 20px;
+    font-size: 16px;
+ }
+ label{
+     font-size: 20px;
+     margin-bottom: 10px;
+  }
