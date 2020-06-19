@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" type="text/css" rel="stylesheet">
-    <title id="title">Puppy Satisfaction Survey</title>
+    <title>Puppy Satisfaction Survey</title>
 </head>
 <body>
-    <h1>Owen's Puppy Palace Customer Survey</h1>
-    <p id="description"></p>Please have your human complete our survey so we can better serve you!</p>
+    <h1 id="title">Owen's Puppy Palace Customer Survey</h1>
+    <p id="description">Please have your human complete our survey so we can better serve you!</p>
     <form id="survey-form">
         <div id="input">
-            <label for="name" id="name-label"> Dog's Name:</label>
+            <label for="dog-name" id="dog-name-label"> Dog's Name:</label>
+            <br>
+                <input type="text" id="dog-name" name="dog-name" placeholder="Enter your dog's name" required>
+        </div>
+        <div id="input">
+            <label for="name" id="name-label"> Owner's Name:</label>
             <br>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
+        <div>
             <label for="email" id="email-label">
                 Owner's Email:
                 <br>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </label>
+        </div>    
         <div id="input">    
             <label for="phone" id="phone-label">
                 Owner's Phone Number:
@@ -34,25 +41,26 @@
                 Dog's Age:
                 <br>
                 Years:
-                <input type="number" id="years" name="years" min="0" max="30" required>
+                <input type="number" id="years" name="years" min="0" max="30" placeholder="0" required>
                 Months:
-                <input type="number" id="months" name="months" min="0" max="11" required>
+                <input type="number" id="months" name="months" min="0" max="11" placeholder="0" required>
             </label>
         </div>
         <hr>
         <div>   
             <label for="location">What location did you visit?</label>
-            <input type="text" id="dropdown" name="location" list="cityname">
-                <datalist id="location">
-                    <option value="Cityline"></option>
-                    <option value="Lakewood"></option>
-                    <option value="East Quarter"></option>
-                </datalist>
+            <select id="dropdown" name="location" list="cityname"> =$
+                <option disabled selected value>Select Location</option>     
+                <option value="Cityline">CityLine</option>
+                <option value="Lakewood">Lakewood</option>
+                <option value="East Quarter">East Quarter</option>
+            </select>
         </div> 
 
         <div id="input">    
             <label for="comments" id="comments-label">
                 Please tell us about your experience:
+                <br>
                 <textarea id="comments" name="comments" class="input-textarea" required></textarea>
             </label>
         </div>
