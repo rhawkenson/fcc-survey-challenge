@@ -41,11 +41,31 @@
                 Dog's Age:
                 <br>
                 Years:
-                <input type="number" id="years" name="years" min="0" max="30" placeholder="0" required>
+                <input type="number" id="number" name="age" min="0" max="30" placeholder="0" required>
                 Months:
-                <input type="number" id="months" name="months" min="0" max="11" placeholder="0" required>
+                <input type="number" id="months" name="age" min="0" max="11" placeholder="0" required>
             </label>
         </div>
+        <div>   
+            <p>Which best describes your dog's size?</p>
+                <div>
+                    <input type="checkbox" id="size" name="size" value="xsmall"><label for="xsmall">0-20 lbs</label>   
+                </div>   
+                <div>
+                    <input type="checkbox" id="size" name="size" value="small"><label for="small">21-30 lbs</label>   
+                </div>
+                <div>
+                    <input type="checkbox" id="size" name="size" value="medium"><label for="medium">31-40 lbs</label>   
+                </div>
+                <div>
+                    <input type="checkbox" id="size" name="size" value="large"><label for="large">41-50 lbs</label>   
+                </div>
+                <div>
+                    <input type="checkbox" id="size" name="size" value="xlarge"><label for="xlarge">>50 lbs</label>   
+                </div>
+        </div>
+        
+        
         <hr>
         <div>   
             <label for="location">What location did you visit?</label>
@@ -57,11 +77,24 @@
             </select>
         </div> 
 
+        <div>   
+            <p>Will you return to Owen's Puppy Palace?</p>
+                <div>
+                    <input type="radio" id="radio" name="return" value="yes"><label for="yes">Yes</label>   
+                </div>   
+                <div>
+                    <input type="radio" id="radio" name="return" value="unsure"><label for="unsure">Unsure</label>   
+                </div>
+                <div>
+                    <input type="radio" id="radio" name="return" value="no"><label for="no">No</label>   
+                </div>
+        </div>
+
         <div id="input">    
             <label for="comments" id="comments-label">
                 Please tell us about your experience:
                 <br>
-                <textarea id="comments" name="comments" class="input-textarea" required></textarea>
+                <textarea id="comments" name="comments" class="input-textarea" cols="70" rows="10" required></textarea>
             </label>
         </div>
 
