@@ -1,3 +1,32 @@
-p{
-    ;
+*{
+     
+}
+
+body {
+    background-image: url('images/dogs.jpg');   
+    text-align: center;
+}
+
+#heading{
+    font-family: "Times New Roman";
+    color: white;
+    background-color: green;
+    margin-bottom: 10px;
+}
+
+div{
+    background-color: #ffffff; 
+    padding: 10px;
+    margin: 0px auto;
+    display: block;
+    opacity: 70%;
+    color: black;
+    width: 500px;
+}
+
+#submit{
+    background-color: red;
+    padding: 5px;
+    color: white;
+    font-size: 206x;
 }
